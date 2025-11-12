@@ -1,0 +1,80 @@
+
+body {
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 20vh 10vh 50vh 20vh;
+    gap: 10px;
+    align-items: stretch;
+    background-color: #fcdee0;
+}
+
+.logo {
+    grid-column: 1 / 2;
+    grid-row: 1/ 2;
+    height: 180px;
+    width: auto;
+}
+
+.rubrik {
+    text-align: center;
+    font-family: "Rubik Distressed", sans-serif;
+    font-size: 5rem;
+}
+
+.länkar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.sidfot {
+    border: none;
+    font-style: italic;
+}
+
+h1 {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+}
+
+nav {
+    grid-column: 2 / 3;
+    grid-row: 2/ 3;
+}
+
+nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px;
+    border: 3px solid #fc6a96;
+    border-radius: 5px;
+}
+
+aside {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+main {
+    grid-column: 2 / 3;
+    grid-row: 3/ 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+main img {width: 200px; height: auto;}
+
+footer {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
